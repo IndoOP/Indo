@@ -1,34 +1,37 @@
-const search = document.getElementById('search');
-const bars = document.getElementById('bars');
-let navbar = document.getElementById('topnav');
-let about = document.querySelector('.hang');
-let desc = document.querySelector('.desc');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const collapse = document.querySelector('.navbar-collapse');
 
-search.addEventListener('keyup', function () {
-    if (search.className !== "activeInput"){
-        search.className += "activeInput";
+    toggler.addEventListener('click', function() {
+        this.classList.toggle('active');
+        collapse.classList.toggle('show');
+    })
+
+    const navLinks = document.querySelector('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                toggler.classList.remove('active');
+                collapse.classList.remove('show');
+            }
+        });
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const scrolled = window.scrollY >= 50;
+
+    if (scrolled) {
+        document.querySelector('.navbar').classList.add('scrolled');
     }
     else{
-        search.className = "";
+        document.querySelector('.navbar').classList.remove('scrolled');
     }
-})
+});
 
-about.addEventListener('click', function(){
-    if(desc.className == "card desc"){
-        desc.className += " tCard";
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
     }
-    else{
-        desc.className = "card desc";
-    }
-})
-
-bars.addEventListener('click', function(){
-    if (bars.className !== "bars barsAct"){
-        bars.className += " barsAct";
-        navbar.className += " toggled";
-    }
-    else{
-        bars.className = "bars";
-        navbar.className = "nav-list";
-    }
-})
+});

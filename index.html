@@ -1,289 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    />
-    <title>Indo Graphics</title>
-  </head>
-  <body>
-    <nav class="topnav">
-      <div class="logo">
-        <img src="logo.png" height="60" width="60" />
-        <div class="logo-text">INDO</div>
-      </div>
-      <div class="nav-list" id="topnav">
-        <a href="#" class="nav-item">home</a>
-        <a href="#" class="nav-item">works</a>
-        <a href="#socials" class="nav-item">socials</a>
-        <a href="#" class="nav-item">hire me</a>
-        <form action="">
-          <input type="text" placeholder="Search Anything..." id="search" />
-        </form>
-      </div>
-      <div class="bars" id="bars">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indo Visuals</title>
+    <link rel="shortcut icon" href="logo/png.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand"><img src="logo/png.png" alt="logo"></a>
+            <button class="navbar-toggler">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                
+            </div>
+        </div>
     </nav>
 
-    <!--Home Page-->
-
-    <div class="homepage">
-      <span class="maintxt">
-        INDO <br />
-        <span class="line"></span> <br />
-        <span class="description">I design what you imagine!</span>
-      </span>
-      <div class="container">
-        <div class="card hang">
-          <span class="c-head">ABOUT ME</span>
-          <small>Click or Hover To Toggle!</small>
+    <header class="profile-header">
+        <!-- Header Background Image -->
+        <div class="header-banner">
+            <img src="logo/Header Max.png" alt="header" class="header">
         </div>
-        <div class="card desc">
-          <div class="c-foot">
-            I am Indo! I am a Graphic Designer, A web developer, A writer, A
-            student and much more!
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Socials-->
-
-    <div class="socials" id="socials">
-      <span class="text">I have social handles too! We can talk there!</span>
-      <span class="line"></span>
-      <div class="s-links">
-        <div
-          class="s-logo"
-          onclick="window.open('https://instagram.com/1ndo.exe')"
-        >
-          <div class="pfp"><span class="fa fa-instagram"></span></div>
-          <div class="s-desc">@1ndo.exe</div>
-        </div>
-        <div class="s-logo" onclick="window.open('https://youtube.com/@1ndo.')">
-          <div class="pfp"><span class="fa fa-youtube-play"></span></div>
-          <div class="s-desc">INDO</div>
-        </div>
-        <div class="s-logo" onclick="window.open('https://t.me/indo_exe')">
-          <div class="pfp"><span class="fa fa-telegram"></span></div>
-          <div class="s-desc">INDO'S GROUP</div>
-        </div>
-      </div>
-    </div>
-
-    <!--Hire me-->
-    <!-- Begin Mailchimp Signup Form -->
-    <!--<link
-      href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-      }
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-    <div id="mc_embed_signup">
-      <form
-        action="https://app.us14.list-manage.com/subscribe/post?u=609d56cbd9607e35a0faca9ab&amp;id=0bdab06a58"
-        method="post"
-        id="mc-embedded-subscribe-form"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate
-      >
-        <div id="mc_embed_signup_scroll">
-          <h2>Hire Me</h2>
-          <div class="indicates-required">
-            <span class="asterisk">*</span> indicates required
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"
-              >Email Address <span class="asterisk">*</span>
-            </label>
-            <input
-              type="email"
-              value=""
-              name="EMAIL"
-              class="required email"
-              id="mce-EMAIL"
-            />
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
-          </div>
-          <div class="mc-field-group">
-            <label for="mce-LNAME">Last Name </label>
-            <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
-          </div>
-          <div class="mc-field-group size1of2">
-            <label for="mce-BIRTHDAY-month">Birthday </label>
-            <div class="datefield">
-              <span class="subfield monthfield"
-                ><input
-                  class="birthday"
-                  type="text"
-                  pattern="[0-9]*"
-                  value=""
-                  placeholder="MM"
-                  size="2"
-                  maxlength="2"
-                  name="BIRTHDAY[month]"
-                  id="mce-BIRTHDAY-month"
-              /></span>
-              /
-              <span class="subfield dayfield"
-                ><input
-                  class="birthday"
-                  type="text"
-                  pattern="[0-9]*"
-                  value=""
-                  placeholder="DD"
-                  size="2"
-                  maxlength="2"
-                  name="BIRTHDAY[day]"
-                  id="mce-BIRTHDAY-day"
-              /></span>
-              <span class="small-meta nowrap">( mm / dd )</span>
+        
+        <!-- Profile Section -->
+        <div class="profile-container" id="home">
+            <div class="profile-content">
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <span class="black"></span>
+                    <img src="logo/b-w.png" alt="Profile" class="profile-img">
+                </div>
+                
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <h1 class="profile-name">Dhruv Shaury</h1>
+                    <p class="profile-username">@1ndo.exe</p>
+                    <p class="profile-bio">I am Dhruv! A graphic designer with a vision to transform your ideas to reality!🧿
+                        <br>🫧 5+ years of experience</p>
+                    <div class="profile-links">
+                        <ul class="list">
+                            <li><a href="https://instagram.com/1ndo.exe"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://youtube.com/@1ndo."><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="https://www.behance.net/dhruvshaury"><i class="fa-brands fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-stats">
+                        <span class="stat"><strong>100</strong> Following</span>
+                        <span class="stat"><strong>500+</strong> Followers</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="mc-field-group input-group">
-            <strong>Email Format </strong>
-            <ul>
-              <li>
-                <input
-                  type="radio"
-                  value="html"
-                  name="EMAILTYPE"
-                  id="mce-EMAILTYPE-0"
-                /><label for="mce-EMAILTYPE-0">html</label>
-              </li>
-              <li>
-                <input
-                  type="radio"
-                  value="text"
-                  name="EMAILTYPE"
-                  id="mce-EMAILTYPE-1"
-                /><label for="mce-EMAILTYPE-1">text</label>
-              </li>
-            </ul>
-          </div>
-          <div id="mce-responses" class="clear foot">
-            <div
-              class="response"
-              id="mce-error-response"
-              style="display: none"
-            ></div>
-            <div
-              class="response"
-              id="mce-success-response"
-              style="display: none"
-            ></div>
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <!--<div style="position: absolute; left: -5000px" aria-hidden="true">
-            <input
-              type="text"
-              name="b_609d56cbd9607e35a0faca9ab_0bdab06a58"
-              tabindex="-1"
-              value=""
-            />
-          </div>
-          <div class="optionalParent">
-            <div class="clear foot">
-              <input
-                type="submit"
-                value="Subscribe"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                class="button"
-              />
-              <p class="brandingLogo">
-                <a
-                  href="http://eepurl.com/hTejWr"
-                  title="Mailchimp - email marketing made easy and fun"
-                  ><img
-                    src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"
-                /></a>
-              </p>
-            </div>
-          </div>
         </div>
-      </form>
-    </div>
-    <script
-      type="text/javascript"
-      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-    ></script>
-    <script type="text/javascript">
-      (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[1] = "FNAME";
-        ftypes[1] = "text";
-        fnames[2] = "LNAME";
-        ftypes[2] = "text";
-        fnames[3] = "ADDRESS";
-        ftypes[3] = "address";
-        fnames[4] = "PHONE";
-        ftypes[4] = "phone";
-        fnames[5] = "BIRTHDAY";
-        ftypes[5] = "birthday";
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
-    <!--End mc_embed_signup-->-->
+    </header>
+
 
     <footer>
-      This Website is currently in development so most of the functions doesn't
-      work....
-      <br>
-      <div class="ver">
-        version 1.0.0 (beta)
-      </div>
-      <small>
-        All rights reserved <span class="fa fa-copyright"></span> Indo Gfx 2022
-      </small>
+        <i class="fa-regular fa-copyright"></i> Dhruv Shaury 2025
     </footer>
-
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
