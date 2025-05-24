@@ -265,6 +265,7 @@ hr {
     background-color: var(--text-color);
     box-shadow: 0 0px 10px rgba(0,0,0, 0.5),
                 inset 0 0 10px rgba(0,0,0, 0.5);
+    transition: 0.3s ease;
 }
 .black:hover {
     opacity: 30%;
