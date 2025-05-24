@@ -35,3 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.add('scrolled');
     }
 });
+
+document.querySelector('.mode').addEventListener('click', function() {
+    document.body.classList.toggle('light');
+    const mode = document.querySelector('.mode');
+    if(mode.classList.contains('fa-sun')) {
+        mode.classList.remove('fa-sun');
+        mode.classList.add('fa-moon');
+    }
+    else {
+        mode.classList.add('fa-sun');
+        mode.classList.remove('fa-moon');
+    }
+})
