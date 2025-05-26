@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggler = document.querySelector('.navbar-toggler');
     const collapse = document.querySelector('.navbar-collapse');
-    const load = document.querySelector('.loading-screen');
-
-    load.classList.add('hide');
+    
 
     toggler.addEventListener('click', function() {
         this.classList.toggle('active');
@@ -50,4 +48,10 @@ document.querySelector('.mode').addEventListener('click', function() {
         mode.classList.add('fa-sun');
         mode.classList.remove('fa-moon');
     }
-})
+});
+
+window.addEventListener('load', function() {
+    const load = document.querySelector('.loading-screen');
+
+    load.classList.add('hide');
+});
